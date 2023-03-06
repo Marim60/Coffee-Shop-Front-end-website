@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+
+}
+
+.Page{
+    position: relative;
+    left: 0%;
+    padding: 0%;
+    
+    
+}
+.Content{
+    padding: 37px 0 68px;
+    min-height: 400px;
+    
+}
+
+.items{
+
+    position: relative;
+    background: rgb(228, 201, 201);
+    overflow: hidden;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    padding: 3px;
+    z-index: 0;
+    float: left;
+    margin: 50px;
+    
+}
+.categories{
+float: left;
+
+}
+
+button {
+    background-color: rgb(216, 173, 195);
+    border: none;
+    color: rgb(13, 13, 13);
+    padding: 7px 7px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    border-radius: 30px;
+    margin-left: 90px;
+}
+
+
+

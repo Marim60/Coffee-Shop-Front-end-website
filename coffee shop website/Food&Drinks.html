@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="Css/page.css">
+    <head>
+        <style>
+    
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color:  rgb(250, 241, 242);
+            margin: 0;
+        }
+    
+        .navbar {
+            overflow: hidden;
+            background-color: rgb(158, 130, 150);
+        }
+    
+            .navbar a {
+            float: left;
+            font-size: 16px;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+    
+            .subnav {
+            float: left;
+            overflow: hidden;
+        }
+    
+            .subnav .subnavbtn {
+            font-size: 16px;  
+            border: none;
+            outline: none;
+            color: black;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+    
+            .navbar a:hover, .subnav:hover .subnavbtn {
+            background-color: rgb(227, 178, 208);
+        }
+    
+            .subnav-content {
+            display: none;
+            position: absolute;
+            left: 0;
+            background-color: rgb(227, 178, 208);
+            width: 100%;
+            z-index: 1;
+        }
+    
+            .subnav-content a {
+            float: left;
+            color: white;
+            text-decoration: none;
+        }
+    
+            .subnav-content a:hover {
+            background-color: #eee;
+            color: black;
+        }
+    
+            .subnav:hover .subnav-content {
+            display: block;
+        }
+            h2{
+                font-family: Verdana;
+        }
+            span{
+                font-family: Oswald;
+        }
+        </style>
+        <script>
+            function confirm ()
+    {
+        alert("This element added to the Cart successfully  ");
+    }
+
+        </script>
+    </head>
+    <body class="Food-Drink">
+        
+<div class="navbar">
+    <a href="Home.html">Home</a>
+    <div class="subnav">
+      <button class="subnavbtn" style="border-radius: 0%;">WorkShops <i class="fa fa-caret-down"></i></button>
+      <div class="subnav-content">
+        <a href="HandCrafts.html">Handcrafts</a>
+        <a href="workshops.html">workshops</a>
+        
+      </div>
+    </div> 
+     
+    <a href="Food&Drinks.html">Food&Drinks</a>
+      <a href="payment.html">Paymemt</a>
+    
+  </div>
+        <link rel="stylesheet" href="page.css">
+        <div class="Page">
+            <div class="Content">
+                <div class="categories">
+                    <ul class="all-products">
+
+                        <li class = "items">
+                            <div class="item-area">
+                                <div class="Product-image">
+                                    <img id="product-collection-image" class src="Photos/red tea.jpg" width="300">
+                                </div>
+                                <div class="details">
+                                    <h2 class="product-name">
+                                        Red tea 
+                                    </h2>
+                                    <div class="price-place">
+                                        <span class="regular-price" id="product-price">
+                                            <p class="price">EGP15</p>
+                                        </span>
+                                    </div>
+                                    <div class="bottom">
+                                        <i class="icon-cart"></i>
+                                        <button onclick="confirm()">&nbsp;Add to Cart</button>
+                                    </div>                                            </div>
+                            </div>
+                        </li>
+
+                        <li class = "items">
+                            <div class="item-area">
+                                <div class="Product-image">
+                                    <img id="product-collection-image" class src="Photos/Black Coffee.jpg" width="300">
+                                </div>
+                                <div class="details">
+                                    <h2 class="product-name">
+                                        Black Coffee 
+                                    </h2>
+                                    <div class="price-place">
+                                        <span class="regular-price" id="product-price">
+                                            <p class="price">EGP25</p>
+                                        </span>
+                                    </div>
+                                    <div class="bottom">
+                                        <i class="icon-cart"></i>
+                                        <button onclick="confirm()">&nbsp;Add to Cart</button>
+                                    </div>                                            </div>
+                            </div>
+                        </li>
+                        <li class = "items">
+                            <div class="item-area">
+                                <div class="Product-image">
+                                    <img id="product-collection-image" class src="Photos/Pink Latte.jpg" width="300">
+                                </div>
+                                <div class="details">
+                                    <h2 class="product-name">
+                                        Pink Latte 
+                                    </h2>
+                                    <div class="price-place">
+                                        <span class="regular-price" id="product-price">
+                                            <p class="price">EGP25</p>
+                                        </span>
+                                    </div>
+                                    <div class="bottom">
+                                        <i class="icon-cart"></i>
+                                        <button onclick="confirm()">&nbsp;Add to Cart</button>
+                                    </div>                                            </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="categories">
+
+                    <ul class="all-products">
+
+                        <li class = "items">
+                            <div class="item-area">
+                                <div class="Product-image">
+                                    <img id="product-collection-image" class src="Photos/milkshake.jpg" width="300">
+                                </div>
+                                <div class="details">
+                                    <h2 class="product-name">
+                                        Milk Shake
+                                    </h2>
+                                    <div class="price-place">
+                                        <span class="regular-price" id="product-price">
+                                            <p class="price">EGP30</p>
+                                        </span>
+                                    </div>
+                                    <div class="bottom">
+                                        <i class="icon-cart"></i>
+                                        <button onclick="confirm()">&nbsp;Add to Cart</button>
+                                    </div>                                            </div>
+                            </div>
+                        </li>
+                        <li class = "items">
+                            <div class="item-area">
+                                <div class="Product-image">
+                                    <img id="product-collection-image" class src="Photos/Truvia.jpg" width="300">
+                                </div>
+                                <div class="details">
+                                    <h2 class="product-name">
+                                        Cappcino
+                                    </h2>
+                                    <div class="price-place">
+                                        <span class="regular-price" id="product-price">
+                                            <p class="price">EGP30</p>
+                                        </span>
+                                    </div>
+                                    <div class="bottom">
+                                        <i class="icon-cart"></i>
+                                        <button onclick="confirm()">&nbsp;Add to Cart</button>
+                                    </div>                                            </div>
+                            </div>
+                        </li>
+                        <li class = "items">
+                            <div class="item-area">
+                                <div class="Product-image">
+                                    <img id="product-collection-image" class src="Photos/green tea.jpg" width="300">
+                                </div>
+                                <div class="details">
+                                    <h2 class="product-name">
+                                        Green Tea 
+                                    </h2>
+                                    <div class="price-place">
+                                        <span class="regular-price" id="product-price">
+                                            <p class="price">EGP15</p>
+                                        </span>
+                                    </div>
+                                    <div class="bottom">
+                                        <i class="icon-cart"></i>
+                                        <button onclick="confirm()">&nbsp;Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="categories">
+
+                    <ul class="all-products">
+
+                        <li class = "items">
+                            <div class="item-area">
+                                <div class="Product-image">
+                                    <img id="product-collection-image" class src="Photos/Delicious donuts.jpg" width="300">
+                                </div>
+                                <div class="details">
+                                    <h2 class="product-name">
+                                        Delicious donuts 
+                                    </h2>
+                                    <div class="price-place">
+                                        <span class="regular-price" id="product-price">
+                                            <p class="price">EGP25</p>
+                                        </span>
+                                    </div>
+                                    <div class="bottom">
+                                        <i class="icon-cart"></i>
+                                        <button onclick="confirm()">&nbsp;Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class = "items">
+                            <div class="item-area">
+                                <div class="Product-image">
+                                    <img id="product-collection-image" class src="Photos/cinnamon roll.jpg" width="300">
+                                </div>
+                                <div class="details">
+                                    <h2 class="product-name">
+                                        cinnamon rolls 
+                                    </h2>
+                                    <div class="price-place">
+                                        <span class="regular-price" id="product-price">
+                                            <p class="price">EGP25</p>
+                                        </span>
+                                    </div>
+                                    <div class="bottom">
+                                        <i class="icon-cart"></i>
+                                        <button onclick="confirm()">&nbsp;Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class = "items">
+                            <div class="item-area">
+                                <div class="Product-image">
+                                    <img id="product-collection-image" class src="Photos/Blueberry Pancakes.jpg" width="300">
+                                </div>
+                                <div class="details">
+                                    <h2 class="product-name">
+                                        Blueberry Pancakes 
+                                    </h2>
+                                    <div class="price-place">
+                                        <span class="regular-price" id="product-price">
+                                            <p class="price">EGP25</p>
+                                        </span>
+                                    </div>
+                                    <div class="bottom">
+                                        <i class="icon-cart"></i>
+                                        <button onclick="confirm()">&nbsp;Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    
+    </body>
+</html>

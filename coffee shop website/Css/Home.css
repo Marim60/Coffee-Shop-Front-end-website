@@ -1,0 +1,29 @@
+#div1{
+ /* background-image: linear-gradient( rgb(8, 74, 140),rgb(231, 232, 222)); */
+    width:88%;
+    height:50%;
+    margin-left: 5%;
+    margin-top: 4.5%;
+    background-color: rgb(204, 49, 49); 
+
+}
+#Containexplain{
+    border-color: rgb(65, 65, 65);
+    background-image: url("Photos/back3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    width:88%;
+    height:100%;
+    margin-left: 5%;
+    margin-top: 500px;
+    padding-left: 1px;
+}
+.explain{
+    border-radius: 100px;
+    float:left;
+    width:25%;
+    margin-top:2%; 
+    margin-bottom: 2%;
+    margin-left:6%;
+}

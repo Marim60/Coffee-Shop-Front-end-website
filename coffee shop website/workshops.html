@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="Css/buy handmade.css">
+    <style>
+    
+    body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color:  rgb(250, 241, 242);
+            margin: 0;
+        }
+    
+        .navbar {
+            overflow: hidden;
+            background-color: rgb(158, 130, 150);
+        }
+    
+            .navbar a {
+            float: left;
+            font-size: 16px;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+    
+            .subnav {
+            float: left;
+            overflow: hidden;
+        }
+    
+            .subnav .subnavbtn {
+            font-size: 16px;  
+            border: none;
+            outline: none;
+            color: black;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+    
+            .navbar a:hover, .subnav:hover .subnavbtn {
+            background-color: rgb(227, 178, 208);
+        }
+    
+            .subnav-content {
+            display: none;
+            position: absolute;
+            left: 0;
+            background-color: rgb(227, 178, 208);
+            width: 100%;
+            z-index: 1;
+        }
+    
+            .subnav-content a {
+            float: left;
+            color: white;
+            text-decoration: none;
+        }
+    
+            .subnav-content a:hover {
+            background-color: #eee;
+            color: black;
+        }
+    
+            .subnav:hover .subnav-content {
+            display: block;
+        }
+        </style>
+        <script>
+            function confirm ()
+    {
+        alert("you have enrolled in this workshop successfully  ");
+    }
+
+        </script>
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="Home.html">Home</a>
+        <div class="subnav">
+          <button class="subnavbtn" style="border-radius: 0%;">WorkShops <i class="fa fa-caret-down"></i></button>
+          <div class="subnav-content">
+            <a href="HandCrafts.html">Handcrafts</a>
+            <a href="workshops.html">workshops</a>
+            
+          </div>
+        </div> 
+         
+        <a href="Food&Drinks.html">Food&Drinks</a>
+          <a href="payment.html">Paymemt</a>
+        
+      </div>
+    <div class="row">
+        <div class="column">
+            <div class="item-area">
+                <div class="product-image-area">
+                    <img src="Photos/workshop9.jpeg" alt="wooden" style="width:95%">
+                </div>
+                <p>Accessories Making</p> 
+                <p>EGP190</p>
+                <button onclick="confirm()">Enroll</button>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="item-area">
+                <div class="product-image-area">
+                    <img src="Photos/workshope2.jpg" alt="wooden" style="width:95%">
+                </div>
+                <p>Handmade jars</p> 
+                <p>EGP250</p>
+                <button onclick="confirm()">Enroll</button>
+            </div>
+        </div>
+        
+
+        <div class="column">
+            <div class="item-area">
+                <div class="product-image-area">
+                    <img src="Photos/workshop5.jpg" alt="mug" style="width:95%">
+                </div>
+                <p>Gift boxes</p> 
+                <p>EGP150</p>
+                <button onclick="confirm()">Enroll</button>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+            <div class="column">
+                <div class="item-area">
+                    <div class="product-image-area">
+                        <img src="Photos/workshop4.jpg" alt="mug" style="width:90%">
+                    </div>
+                    <p>Candle Making</p> 
+                    <p>EGP200</p>
+                    <button onclick="confirm()">Enroll</button>
+                </div>
+            </div>
+
+
+                <div class="column">
+                    <div class="item-area">
+                        <div class="product-image-area">
+                        <img src="Photos/workshope3.jpg" alt="wooden" style="width:95%">
+                    </div>
+                    <p>Painting</p> 
+                    <p>EGP190</p>
+                    <button onclick="confirm()">Enroll</button>
+                    </div>
+                </div>
+
+
+                    <div class="column">
+                        <div class="item-area">
+                            <div class="product-image-area">
+                                <img src="Photos/workshope6.jpg" alt="wooden" style="width:95%">
+                            </div>
+                            <p>Gift bags</p> 
+                            <p>EGP190</p>
+                            <button onclick="confirm()">Enroll</button>
+                        </div>
+                    </div>
+
+                    
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <div class="item-area">
+                <div class="product-image-area">
+                    <img src="Photos/workshop8.jpeg" alt="wooden" style="width:95%">
+                </div>
+                <p>Crochet</p> 
+                <p>EGP190</p>
+                <button onclick="confirm()">Enroll</button>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="item-area">
+                <div class="product-image-area">
+                    <img src="Photos/workshope7.jpg" alt="wooden" style="width:95%">
+                </div>
+                <p>Tailoring Clothes</p> 
+                <p>EGP300</p>
+                <button onclick="confirm()">Enroll</button>
+            </div>
+        </div>
+        
+
+        <div class="column">
+            <div class="item-area">
+                <div class="product-image-area">
+                    <img src="Photos/workshope1.jpeg" alt="wooden" style="width:95%">
+                </div>
+                <p>Hand Embroidery</p> 
+                <p>EGP300</p>
+                <button onclick="confirm()">Enroll</button>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

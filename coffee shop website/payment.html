@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title> Payment</title>
+    <link rel="stylesheet" href="Css/payment.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    
+        body {
+          font-family: Arial, Helvetica, sans-serif;
+          margin: 0;
+        }
+        
+        .navbar {
+          overflow: hidden;
+          background-color: rgb(158, 130, 150);
+        }
+        
+        .navbar a {
+          float: left;
+          font-size: 16px;
+          color: rgb(0, 0, 0);
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+        
+        .subnav {
+          float: left;
+          overflow: hidden;
+        }
+        
+        .subnav .subnavbtn {
+          font-size: 16px;  
+          border: none;
+          outline: none;
+          color: black;
+          padding: 14px 16px;
+          background-color: inherit;
+          font-family: inherit;
+          margin: 0;
+        }
+        
+        .navbar a:hover, .subnav:hover .subnavbtn {
+          background-color: rgb(227, 178, 208);
+        }
+        
+        .subnav-content {
+          display: none;
+          position: absolute;
+          left: 0;
+          background-color: rgb(227, 178, 208);
+          width: 100%;
+          z-index: 1;
+        }
+        
+        .subnav-content a {
+          float: left;
+          color: white;
+          text-decoration: none;
+        }
+        
+        .subnav-content a:hover {
+          background-color: #eee;
+          color: black;
+        }
+        
+        .subnav:hover .subnav-content {
+          display: block;
+        }
+        </style>
+ <script>
+    function validate_expire ()
+    {
+        
+  var selectedText = document.getElementById('DE').value;
+  var selectedDate = new Date(selectedText);
+  var now = new Date();
+  if (selectedDate < now) 
+    {
+    alert("The card is expierd ");
+  
+    }
+    }
+    function confirm ()
+    {
+        alert("you are successfully complete the payment ");
+    }
+  </script>
+</head>
+<body>
+    
+<div class="navbar">
+    <a href="Home.html">Home</a>
+    <div class="subnav">
+      <button class="subnavbtn">WorkShops <i class="fa fa-caret-down"></i></button>
+      <div class="subnav-content">
+        <a href="HandCrafts.html">Handcrafts</a>
+        <a href="workshops.html">workshops</a>
+        
+      </div>
+    </div> 
+  
+    <a href="Food&Drinks.html">Food&Drinks</a>
+      <a href="payment.html">Paymemt</a>
+    
+  </div>
+	<center>
+  
+    <div class="labels">
+        <div class="col-50">
+            <h3>Payment</h3>
+            <label for="fname">Accepted Cards</label>
+
+            <div class="icon-container">
+              <i class="fa fa-cc-visa" style="color:navy;"></i>
+              <i class="fa fa-cc-amex" style="color:blue;"></i>
+              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+              <i class="fa fa-cc-discover" style="color:orange;"></i>
+            </div>
+
+            <form id="payment" name="contact-form"   method="post">
+                
+            <div class="input-control">
+                <lable for="cname"><b> Name on Card: </b></lable>
+                <input type="text" id="cname" name="cname" placeholder="Name on Card" required style="margin-left: 35px;"><br>
+            
+            </div>
+
+            <div class="input-control">
+                <lable for="cnumber"> <b>Credit card number: </b> </lable>
+                <input type="text" id="cnumber" name="cnumber" pattern="[0-9]{16}" placeholder="1111-2222-3333-4444" required ><br/>
+                <small style="margin-left: 10px;"> * the credit card number must be 16 digit *</small>
+                <br>
+                
+            </div>
+
+            <div class="input-control">
+                <lable for="DE"><b>Expired Date:</b></lable>
+                <input type="date" id="DE" name="DE" value="1/1/2023"required onchange="validate_expire ()" style="margin-left: 50px;"><br>
+            </div>
+
+                
+            <div class="input-control">
+                <lable for="fname"><b>  Full Name: </b></lable>
+                <input type="text" id="fname" name="fname" placeholder=" Mariam Ahmed"required style="margin-left: 70px;"><br>
+            
+            </div>
+
+            <div class="input-control">
+                <lable for="email"><b>E-mail</b></lable>
+                <input type="email" id="email" name="email" placeholder="Email Address"required style="margin-left: 100px;"><br>
+                    
+            </div>
+
+            
+            <div class="input-control">
+                <lable for="PN"><b>  Phone Number: </b></lable>
+                <input type="text" id="fname" name="fname" placeholder="01111112222" pattern="[0]{1}[1]{1}[0,1,2,5]{1}[0-9]{7,8}" required style="margin-left: 30px;">
+                <br>
+                <small style="margin-left: 10px;"> * the phone must be 10 or 11 digit begin with
+                    01 then 0,1,2 or 5 *</small>
+                <br>
+                
+            </div>
+            
+
+            <div class="input-control">
+                <lable for="Address"><b> Address: </b></lable>
+                <input type="text" id="Address" name="Address" placeholder="street name, street number"required style="margin-left: 80px;"><br>
+                
+            </div>
+
+            <div class="input-control">
+                <lable for="City"><b> City: </b></lable>
+                <input type="text" id="City" name="City" placeholder="Cairo"required style="margin-left: 110px;"><br>
+                
+            </div>
+
+            <div class="input-control">
+                <lable for="state"><b>State: </b></lable>
+                <input type="text" id="state" name="state" placeholder="Egypt"required style="margin-left: 100px;"><br>
+                
+            </div>
+          <input type="submit"  value="Pay" class="but"  >
+          <a href="Home.html" ><input type="button"  value="Confirm" class="but" onclick="confirm()" ></a>
+          
+            </form>
+        </div>
+    </div>
+    </center>
+    
+</body>
+</html>
